@@ -1,5 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 This class is a state machine that transitions between states based on pair
@@ -33,7 +33,7 @@ class HandGestureProcessor {
     private let evidenceCounterStateTrigger: Int
     
     var didChangeStateClosure: ((State) -> Void)?
-    private (set) var lastProcessedPointsPair = PointsPair(.zero, .zero)
+    private(set) var lastProcessedPointsPair = PointsPair(.zero, .zero)
     
     init(pinchMaxDistance: CGFloat = 40, evidenceCounterStateTrigger: Int = 3) {
         self.pinchMaxDistance = pinchMaxDistance
